@@ -1,2 +1,2 @@
-# Veltora.github.io
-Veltora - A Smart School Management System
+# schoolvix.github.io
+Schoolvix - A Smart School Management System
