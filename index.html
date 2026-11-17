@@ -2,186 +2,120 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VELTORA - In Perfect Hands | Education • Business • Technology</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>SchoolVix - School Management System | By VELTORA</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,system-ui,Arial,sans-serif}
-body{color:#0f1e3a;background:#fff;line-height:1.65}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,system-ui,sans-serif}
+body{background:#FAF9F6;color:#0F1E3A;line-height:1.65}
 a{text-decoration:none;color:inherit;cursor:pointer}
 .container{max-width:1200px;margin:auto;padding:0 24px}
-nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #e8eaf0;z-index:50}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:86px;gap:10px}
-.logo{display:flex;align-items:center;gap:12px;cursor:pointer;flex-shrink:0;line-height:1}
-.logo img{width:68px;height:68px;object-fit:contain;border-radius:12px;background:#f5f6f7;flex-shrink:0;box-shadow:0 4px 14px rgba(91,46,219,.15)}
-.logo i{width:42px;height:42px;background:linear-gradient(135deg,#5B2EDB,#0A6ED1);display:inline-block;border-radius:10px;flex-shrink:0}
-.logo-text{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;line-height:1;white-space:nowrap}
-.logo-name{font-family:'Poppins',Arial,sans-serif;font-size:32px;font-weight:900;letter-spacing:1.5px;line-height:1;background:linear-gradient(90deg,#4A1FD6,#5B2EDB,#0A6ED1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:transparent}
-.logo-tag{font-family:'Poppins',Arial,sans-serif;font-size:9px;letter-spacing:2px;color:#5B2EDB;font-weight:700;margin-top:5px;white-space:nowrap;text-transform:uppercase}
-.links{display:flex;gap:16px;font-weight:500;font-size:14px;align-items:center;white-space:nowrap}.links a{white-space:nowrap}.links a:hover{color:#5B2EDB}
-.btn{background:linear-gradient(135deg,#5B2EDB,#0A6ED1);color:#fff;padding:12px 20px;border-radius:8px;font-weight:600;border:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;text-align:center;line-height:1;white-space:nowrap;flex-shrink:0;box-shadow:0 4px 14px rgba(91,46,219,.25)}
-.btn-light{background:#f1f3f6;color:#111;padding:12px 20px;border-radius:8px;font-weight:600;border:1px solid #ddd;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;line-height:1;white-space:nowrap}
-.btn-green{background:#25D366;color:#fff;padding:9px 15px;border-radius:8px;font-weight:600;border:0;cursor:pointer;font-size:13px;display:inline-flex;align-items:center;justify-content:center;gap:6px;line-height:1}
-.btn-red{background:#dc2626;color:#fff;padding:8px 14px;border-radius:8px;border:0;cursor:pointer;font-weight:600;display:inline-flex;align-items:center;justify-content:center}
-.btn-small{padding:9px 15px;font-size:13px}
-.btn-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:flex-start;margin-top:20px}
-.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:0px;align-items:stretch;padding:0}
-.hero-left{padding:60px 40px 60px 0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
-.hero h1{font-family:'Poppins',Arial,sans-serif;font-size:50px;line-height:1.05;letter-spacing:-1px}
-.hero p{color:#555;margin:18px 0 0;font-size:17px}
-.hero-img{width:100%;height:620px;object-fit:cover;object-position:center 15%;display:block;background:#e8f2ff}
-.section{padding:56px 0}.grey{background:#F5F6F7}.center{text-align:center}.center h2{font-family:'Poppins',Arial,sans-serif;font-size:34px}.center p{color:#666;margin-top:8px}
+nav{position:sticky;top:0;background:rgba(250,249,246,.95);backdrop-filter:blur(10px);border-bottom:1px solid #E8E0D0;z-index:50}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:78px;gap:12px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:52px;height:52px;background:#0F1E3A;color:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:32px;position:relative}
+.logo-mark span{color:#C9A86A;font-size:16px;position:absolute;top:4px;right:6px}
+.logo-name{font-family:'Playfair Display',serif;font-size:32px;font-weight:800;line-height:1}
+.logo-tag{font-size:9px;letter-spacing:2.5px;font-weight:700;color:#0E5A5A;text-transform:uppercase}
+.links{display:flex;gap:22px;font-weight:500;font-size:14px}
+.links a:hover{color:#0E5A5A}
+.btn{background:#0F1E3A;color:#fff;padding:13px 22px;border-radius:99px;font-weight:600;border:0;cursor:pointer;display:inline-flex;gap:8px;align-items:center}
+.btn-gold{background:#C9A86A;color:#0F1E3A;padding:13px 22px;border-radius:99px;font-weight:700;border:0;cursor:pointer}
+.btn-light{background:#fff;color:#0F1E3A;padding:13px 22px;border-radius:99px;font-weight:600;border:1px solid #E8E0D0;cursor:pointer}
+.pill{display:inline-block;background:#EAF2F2;color:#0E5A5A;padding:7px 14px;border-radius:99px;font-weight:700;font-size:12px;letter-spacing:.5px}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:56px 0 20px}
+.hero h1{font-family:'Playfair Display',serif;font-size:54px;line-height:1.05;letter-spacing:-1px;margin:16px 0}
+.hero h1 em{color:#0E5A5A;font-style:italic}
+.hero p{color:#555;font-size:17px}
+.hero-stats{display:flex;gap:0;margin-top:28px;border-top:1px solid #E8E0D0;border-bottom:1px solid #E8E0D0}
+.hero-stats div{flex:1;padding:16px 12px;text-align:center;border-right:1px solid #E8E0D0}
+.hero-stats div:last-child{border:0}
+.hero-stats b{font-family:'Playfair Display',serif;font-size:26px;display:block}
+.hero-stats span{font-size:12px;color:#777}
+.hero-card{background:#fff;border:1px solid #E8E0D0;border-radius:20px;padding:24px;box-shadow:0 20px 50px rgba(15,30,58,.08)}
+.hero-card-top{display:flex;justify-content:space-between;align-items:center}
+.mini-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px dashed #E8E0D0;font-size:14px}
+.badge{padding:4px 10px;border-radius:99px;font-size:11px;font-weight:700}
+.bg-green{background:#D9F0E6;color:#0E5A5A}.bg-gold{background:#F8EEDD;color:#8A6A2A}.bg-red{background:#FDE8E8;color:#9B1C1C}
+.section{padding:56px 0}.grey{background:#F1EDE3}
+.center{text-align:center}.center h2{font-family:'Playfair Display',serif;font-size:36px}.center p{color:#666;margin-top:8px}
 .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:32px}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px;align-items:center}
-.card{background:#fff;border:1px solid #e8eaf0;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
-.card img{width:100%;height:180px;object-fit:cover;background:#e8f2ff}
-.card-body{padding:20px;display:flex;flex-direction:column;align-items:flex-start;flex:1}.card-body h3{font-family:'Poppins',Arial,sans-serif;font-size:20px}.card-body p{color:#666;font-size:14px;margin:8px 0 12px}
-.learn{color:#5B2EDB;font-weight:700;font-size:14px;cursor:pointer}
-.about-box{background:#fff;border:1px solid #e8eaf0;border-radius:16px;padding:32px}
-.about-box p{color:#444;font-size:16px;margin-top:12px}
-.pill{display:inline-block;background:#EDE9FE;color:#5B2EDB;padding:6px 14px;border-radius:99px;font-weight:700;font-size:13px}
-.slogan{font-family:'Poppins',Arial,sans-serif;font-size:22px;font-weight:800;letter-spacing:.5px;margin:10px 0 0;background:linear-gradient(90deg,#4A1FD6,#0A6ED1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.slogan-big{background:linear-gradient(135deg,#4A1FD6,#5B2EDB,#0A6ED1);color:#fff;text-align:center;padding:28px 20px;border-radius:16px;margin-top:24px}
-.slogan-big h2{font-family:'Poppins',Arial,sans-serif;font-size:32px;line-height:1.2}.slogan-big p{color:#e0e7ff !important;font-size:15px;margin-top:8px}
-.building-img{width:100%;height:280px;object-fit:cover;border-radius:14px;background:#e8f2ff}
-.team-img{width:100%;height:320px;object-fit:cover;border-radius:14px}
-footer{background:#0A1931;color:#cbd5e1;padding:48px 0 0}
+.card{background:#fff;border:1px solid #E8E0D0;border-radius:18px;padding:26px}
+.card h3{font-family:'Playfair Display',serif;font-size:22px;margin:12px 0 8px}
+.card p{color:#666;font-size:14px}
+.icon{width:48px;height:48px;border-radius:12px;background:#0F1E3A;color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px}
+.price{background:#0F1E3A;color:#fff;border-radius:20px;padding:28px}
+.price h3{font-family:'Playfair Display',serif;font-size:24px}
+.price ul{list-style:none;margin:16px 0}.price li{margin:9px 0;padding-left:22px;position:relative;font-size:14px;color:#E8E0D0}
+.price li:before{content:"✓";position:absolute;left:0;color:#C9A86A;font-weight:800}
+footer{background:#0F1E3A;color:#CBD5E1;padding:48px 0 0}
 .foot{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:24px;padding-bottom:28px}
-.foot h4{color:#fff;margin-bottom:12px}.foot p,.foot a{display:block;color:#aab8cc;font-size:14px;margin:6px 0;cursor:pointer}
-.foot img{width:68px;height:68px;object-fit:contain;background:#fff;border-radius:12px;padding:4px}
-.copy{background:#000 !important;color:#fff;text-align:center;padding:16px 10px;font-size:13px;border-top:1px solid #222;cursor:pointer}
-.copy span{font-size:12px;color:#aaa}
-.page{display:none}.page.active{display:block}
+.foot h4{color:#fff;margin-bottom:12px}.foot a,.foot p{display:block;color:#AAB8CC;font-size:14px;margin:6px 0}
+.copy{background:#000;color:#fff;text-align:center;padding:16px;font-size:13px}
 .modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:100;align-items:center;justify-content:center;padding:20px}
-.modal.open{display:flex}.modal-box{background:#fff;width:100%;max-width:560px;border-radius:16px;padding:28px;max-height:90vh;overflow:auto;position:relative}
-.close{position:absolute;right:16px;top:12px;font-size:24px;cursor:pointer}
-input,select,textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:8px;margin:8px 0;font-size:15px}
-.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#0f1e3a;color:#fff;padding:12px 20px;border-radius:99px;display:none;z-index:200;font-size:14px}
-.admin-table{width:100%;border-collapse:collapse;margin-top:14px;font-size:13px}.admin-table th,.admin-table td{border:1px solid #ddd;padding:8px;text-align:left}
-.badge{background:#EDE9FE;color:#5B2EDB;padding:3px 8px;border-radius:99px;font-size:11px;font-weight:700}
-.badge-green{background:#dcfce7;color:#16a34a;padding:3px 8px;border-radius:99px;font-size:11px;font-weight:700}
-.check{list-style:none;margin-top:12px}.check li{margin:9px 0;padding-left:26px;position:relative}.check li:before{content:"✓";position:absolute;left:0;color:#5B2EDB;font-weight:800}
-.logo-preview{width:90px;height:90px;object-fit:contain;border:2px dashed #5B2EDB;border-radius:12px;background:#f5f6f7;display:none;margin:10px 0}
-@media(max-width:820px){.hero,.grid3,.grid2,.foot{grid-template-columns:1fr}.hero h1{font-size:36px}.links{display:none}.slogan-big h2{font-size:24px}.hero-img{height:360px}.hero-left{padding:30px 0}.btn-row{justify-content:flex-start}.logo-tag{font-size:7px}.logo-name{font-size:28px}.logo img{width:56px;height:56px}}
+.modal.open{display:flex}.modal-box{background:#FAF9F6;width:100%;max-width:520px;border-radius:20px;padding:28px;position:relative}
+.close{position:absolute;right:16px;top:12px;font-size:26px;cursor:pointer}
+input,select,textarea{width:100%;padding:13px;border:1px solid #ddd;border-radius:10px;margin:8px 0;font-size:15px;background:#fff}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#0F1E3A;color:#fff;padding:12px 20px;border-radius:99px;display:none;z-index:200}
+@media(max-width:820px){.hero,.grid3,.grid2,.foot{grid-template-columns:1fr}.hero h1{font-size:38px}.links{display:none}}
 </style>
 </head>
 <body>
 <nav><div class="container nav-inner">
-<div class="logo" onclick="showPage('home')"><img id="logoImg" src="" style="display:none" alt="Logo"><i id="logoDefault"></i><div class="logo-text"><span class="logo-name">VELTORA</span><span class="logo-tag">In Perfect Hands • Education • Business • Technology</span></div></div>
-<div class="links"><a onclick="showPage('home')">Home</a><a onclick="showPage('retail')">Retail Suite</a><a onclick="showPage('erp')">School ERP</a><a onclick="showPage('home');scrollToId('team')">Leadership</a><a onclick="openModal('contact')">Contact</a></div>
-<button class="btn" onclick="openModal('demo')">Book Demo</button>
+<div class="logo"><div class="logo-mark">S<span>↑</span></div><div><div class="logo-name">schoolvix</div><div class="logo-tag">School Management System • By Veltora</div></div></div>
+<div class="links"><a href="#features">Features</a><a href="#dashboard">Dashboard</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></div>
+<button class="btn" onclick="openModal()">Book Free Demo →</button>
 </div></nav>
 
-<div id="page-home" class="page active">
-<div class="container hero" id="home">
-<div class="hero-left"><span class="pill">VELTORA • IN PERFECT HANDS</span><h1 style="margin-top:12px">Technology that moves schools and businesses forward.</h1>
-<p class="slogan">VELTORA - In Perfect Hands 🤝</p>
-<p>VELTORA builds secure, scalable platforms for education and enterprise — simplifying operations, analytics, and growth for schools and businesses across Pakistan.</p>
-<div class="btn-row"><button class="btn" onclick="scrollToId('products')">Explore Products</button><button class="btn" onclick="openModal('demo')">Book Demo</button></div>
-<p style="font-size:13px;color:#777;margin-top:14px">Trusted by <b style="color:#111">IBA Karachi • NUST • LUMS • Beaconhouse</b> • <span id="leadCount" class="badge">0 Leads Saved</span></p>
+<div class="container hero">
+<div><span class="pill">SCHOOLVIX • BY VELTORA • IN PERFECT HANDS</span>
+<h1>Poora school,<br><em>ek hi system</em> me.</h1>
+<p>Admissions se leke Fees, Attendance, Exams, Timetable aur Parent Communication tak. Principal ko clear reports, teachers ko easy tools, parents ko full transparency.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px"><button class="btn" onclick="openModal()">Get Free Demo →</button><button class="btn-light" onclick="document.getElementById('dashboard').scrollIntoView({behavior:'smooth'})">See Dashboard</button></div>
+<div class="hero-stats"><div><b>1,172</b><span>Presents Today</span></div><div><b>PKR 2.84M</b><span>Fees Collected</span></div><div><b>100+</b><span>Schools Trust Us</span></div></div>
+<p style="font-size:13px;color:#888;margin-top:14px">Trusted by Govt High School Vehari • Beaconhouse • City School Network</p>
 </div>
-<img class="hero-img" src="veltora-building.jpg" alt="VELTORA GROUP Headquarters">
+<div class="hero-card" id="dashboard">
+<div class="hero-card-top"><div><b style="font-family:'Playfair Display',serif;font-size:20px">Good Morning, Principal</b><p style="font-size:13px;color:#777">Govt High School Vehari • Mon, 14 Oct • 09:32 AM</p></div><span class="badge bg-green">LIVE</span></div>
+<div class="mini-row"><span>Presents</span><b>1,172 <span class="badge bg-green">+4.2%</span></b></div>
+<div class="mini-row"><span>Absents</span><b>74 <span class="badge bg-red">-1.8%</span></b></div>
+<div class="mini-row"><span>Fees Collected</span><b>PKR 2.84M</b></div>
+<div class="mini-row"><span>Pending Fees</span><b>PKR 420K <span class="badge bg-gold">15 Invoices</span></b></div>
+<div class="mini-row"><span>Today's Classes</span><b>6 Active • Math 09:30</b></div>
+<div style="display:flex;gap:10px;margin-top:16px"><button class="btn" style="flex:1;justify-content:center" onclick="openModal()">+ Add Student</button><button class="btn-light" style="flex:1" onclick="openModal()">Record Fee</button></div>
 </div>
-<div class="container"><div class="slogan-big"><h2>VELTORA - In Perfect Hands</h2><p>President M. Fahad builds the technology • CEO M. Hamid builds the trust • Your business is in perfect hands.</p></div></div>
+</div>
 
-<div class="section" id="about"><div class="container"><div class="about-box">
-<span class="pill">ABOUT VELTORA • HQ 2025 • IN PERFECT HANDS</span>
-<h2 style="font-family:'Poppins',Arial,sans-serif;font-size:32px;margin-top:12px">Building Pakistan's Most Trusted Education & Business Technology Company</h2>
-<div class="grid2">
-<div><p><b>VELTORA</b> is a technology company <b>Headquartered in Singapore since 2025</b>, with operations in Pakistan, on a mission to modernize how schools are managed and how businesses grow. Founded in 2018, we started with one simple belief — <b>great technology should be simple, secure, and accessible for everyone.</b></p></div>
-<div><img class="building-img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80" alt="VELTORA New Office"><p style="font-size:12px;color:#888;text-align:center">VELTORA Head Office - New Modern Workspace</p></div>
-</div>
-<div class="grid2">
-<div><img class="building-img" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&q=80" alt="VELTORA Meeting"><p style="font-size:12px;color:#888;text-align:center">VELTORA Meeting Space - Strategy & Planning</p></div>
-<div><p>Today, VELTORA powers <b>100+ schools, retailers, and enterprises</b> across Karachi, Lahore, and Multan with three flagship platforms: <b>Veltora Retail Suite</b> for complete business management, <b>SaleVix POS</b> for fast retail operations, and <b>Veltora School ERP</b> for complete school management. From admissions to attendance, from sales to finance — everything works in one secure cloud system.</p></div>
-</div>
-<div class="grid2">
-<div><p>What makes us different is our approach: <b>local support, global standards.</b> Our team understands Pakistani schools and businesses, speaks your language, and provides on-ground training, implementation, and 24/7 support — so you never feel alone with technology.</p>
-<ul class="check"><li><b>HQ 2025:</b> Headquartered in Singapore since 2025</li><li><b>Since 2018:</b> 8+ years of proven delivery</li><li><b>100+ Clients:</b> Schools, retailers & enterprises trust us</li><li><b>99.9% Uptime:</b> Secure cloud infrastructure</li><li><b>Local Team:</b> Karachi • Lahore • Multan</li></ul></div>
-<div><img class="building-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80" alt="VELTORA Team"><p style="font-size:12px;color:#888;text-align:center">VELTORA Team - Working Together For You</p></div>
-</div>
-<br><div class="btn-row"><button class="btn" onclick="openModal('demo')">Partner With Veltora →</button></div>
-</div></div></div>
-
-<div class="section grey"><div class="container center"><span class="pill">OUR FOUNDATION</span><h2 style="margin-top:10px">Vision, Mission & Core Competencies</h2>
-<div class="grid2" style="text-align:left;margin-top:30px"><div><h3>👁️ Our Vision</h3><p style="color:#444"><b>To become Pakistan's most trusted technology partner</b> — where every school runs smartly and every business grows digitally. We envision a future where no school struggles with paperwork, no shop loses sales due to slow systems, and every organization has access to world-class, affordable technology.</p><p style="color:#5B2EDB;font-weight:700;font-size:13px">VISION 2030: 1000+ Institutions • Pan-Pakistan • Global Standards</p></div><div><img class="building-img" src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?w=900&q=80" alt="Vision Building"></div></div>
-<div class="grid2" style="text-align:left"><div><img class="building-img" src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=900&q=80" alt="Mission Building"></div><div><h3>🎯 Our Mission</h3><p style="color:#444"><b>To simplify operations through secure, scalable, and easy-to-use technology.</b> We build products that save time, reduce cost, and give leaders clear data to make better decisions. From a small school in Multan to a large retail chain in Karachi — same quality, same care.</p><p style="color:#5B2EDB;font-weight:700;font-size:13px">OUR PROMISE: Simple • Secure • Supported • In Perfect Hands</p></div></div>
-<div class="grid2" style="text-align:left"><div><h3>💎 Core Competencies</h3><ul style="margin-left:16px;color:#333"><li><b>Education Technology:</b> Complete School ERP</li><li><b>Business Software:</b> Veltora Retail Suite - CRM, Finance, HR</li><li><b>Retail Technology:</b> SaleVix POS - Fast & Reliable</li><li><b>Cloud & Security:</b> Enterprise-grade protection</li><li><b>Local Support:</b> Training + 24/7 Help</li></ul></div><div><img class="building-img" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=900&q=80" alt="Core Building"></div></div>
-</div></div>
-
-<div class="section" id="team"><div class="container center"><span class="pill">OUR LEADERSHIP • IN PERFECT HANDS</span><h2 style="margin-top:10px">Meet The Leaders Behind VELTORA</h2><p>Perfect Hands. Clear Vision. Strong Leadership.</p>
-<div class="grid2" style="text-align:left;margin-top:30px">
-<div style="background:#fff;border:1px solid #e8eaf0;border-radius:16px;overflow:hidden"><img class="team-img" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=900&q=80"><div style="padding:24px"><span class="pill">PRESIDENT</span><h3 style="font-family:'Poppins',Arial,sans-serif;font-size:24px;margin:10px 0 4px">M. Fahad</h3><p style="color:#5B2EDB;font-weight:700;font-size:14px">President • Founder & Hands-on Developer</p><p style="color:#444;font-size:15px;margin-top:10px"><b>M. Fahad</b> is the <b>President and Founder of VELTORA</b>, and the perfect hands developer behind every product. From the first line of code to the final deployment, Fahad personally leads the development of Veltora Retail Suite, SaleVix POS, and Veltora School ERP.</p><p style="color:#444;font-size:15px;margin-top:10px">With deep expertise in software architecture, cloud systems, and education technology, he believes in one principle — <b>"Technology should solve real problems, not create new ones."</b> Under his leadership, VELTORA has grown from a small startup in 2018 to a Singapore-headquartered company (HQ 2025) trusted by 100+ institutions.</p><p style="color:#5B2EDB;font-weight:700;font-size:13px;margin-top:12px">EXPERTISE: Software Architecture • Cloud • ERP • POS • Product Strategy</p><br><div class="btn-row"><button class="btn btn-small" onclick="openModal('contact')">Connect →</button></div></div></div>
-<div style="background:#fff;border:1px solid #e8eaf0;border-radius:16px;overflow:hidden"><img class="team-img" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=900&q=80"><div style="padding:24px"><span class="pill">CHIEF EXECUTIVE OFFICER</span><h3 style="font-family:'Poppins',Arial,sans-serif;font-size:24px;margin:10px 0 4px">M. Hamid</h3><p style="color:#5B2EDB;font-weight:700;font-size:14px">Chief Executive Officer • CEO, VELTORA</p><p style="color:#444;font-size:15px;margin-top:10px"><b>M. Hamid</b> is the <b>Chief Executive Officer of VELTORA</b>, responsible for the company's overall vision, growth strategy, and day-to-day operations. Hamid leads VELTORA's expansion across Pakistan and its global presence from Singapore HQ (2025).</p><p style="color:#444;font-size:15px;margin-top:10px">With strong leadership in business development, partnerships, and client success, Hamid ensures that every school and business gets not just software — but a true partner. His focus is on <b>trust, transparency, and long-term relationships.</b></p><p style="color:#444;font-size:15px;margin-top:10px">Under Hamid's leadership, VELTORA has built a dedicated support team in Karachi, Lahore, and Multan, launched successful partnerships, and set a clear roadmap to reach <b>1000+ institutions by 2030.</b></p><p style="color:#5B2EDB;font-weight:700;font-size:13px;margin-top:12px">EXPERTISE: Business Strategy • Leadership • Partnerships • Client Success • Growth</p><br><div class="btn-row"><button class="btn btn-small" onclick="openModal('contact')">Connect →</button></div></div></div>
-</div>
-<p style="color:#666;margin-top:20px;font-size:14px"><b>Together:</b> President M. Fahad builds the technology, CEO M. Hamid builds the trust. This is the perfect combination behind VELTORA - <b>In Perfect Hands.</b></p>
-</div></div>
-
-<div class="section grey" id="products"><div class="container center"><h2>Products</h2><p>Powerful solutions for schools and businesses.</p>
+<div class="section grey" id="features"><div class="container center"><span class="pill">EVERYTHING YOUR SCHOOL NEEDS</span><h2>Ek system, har kaam</h2><p>Koi register, koi excel, koi confusion nahi.</p>
 <div class="grid3">
-<div class="card"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80"><div class="card-body"><h3>Veltora Retail Suite</h3><p>POS + Inventory + Customers + Finance - sab ek jagah.</p><a class="learn" onclick="showPage('retail')">Learn more →</a><br><div class="btn-row" style="margin-top:auto"><button class="btn btn-small" onclick="openModal('demo','Veltora Retail Suite')">Book Demo</button></div></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&q=80"><div class="card-body"><h3>SaleVix POS</h3><p>Fast checkout, inventory, reports.</p><br><div class="btn-row" style="margin-top:auto"><button class="btn btn-small" onclick="openModal('demo','SaleVix POS')">Book Demo</button></div></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&q=80"><div class="card-body"><h3>Veltora School ERP</h3><p>Students + Fees + Attendance + Result - sab ek jagah.</p><a class="learn" onclick="showPage('erp')">Learn more →</a><br><div class="btn-row" style="margin-top:auto"><button class="btn btn-small" onclick="openModal('demo','Veltora School ERP')">Book Demo</button></div></div></div>
+<div class="card"><div class="icon">🎓</div><h3>Admissions</h3><p>Online admission, student profile, documents, promotion, transfer - sab digital.</p></div>
+<div class="card"><div class="icon">💳</div><h3>Fees & Challan</h3><p>Auto challan, discount, fine, SMS / WhatsApp reminder, full fee history.</p></div>
+<div class="card"><div class="icon">✓</div><h3>Attendance</h3><p>One-click attendance, absent SMS to parents, monthly report in seconds.</p></div>
+<div class="card"><div class="icon">📚</div><h3>Exams & Result</h3><p>Timetable, homework, exams, auto result card, board format print.</p></div>
+<div class="card"><div class="icon">🚌</div><h3>Transport & Hostel</h3><p>Routes, driver, vehicle, hostel rooms, mess - sab track.</p></div>
+<div class="card"><div class="icon">👨‍👩‍👧</div><h3>Parent App</h3><p>Parents ko attendance, fees, homework, result - sab mobile par.</p></div>
 </div></div></div>
-</div>
 
-<div id="page-retail" class="page"><div class="container" style="padding:56px 24px">
-<span class="pill">VELTORA RETAIL SUITE • BY VELTORA • IN PERFECT HANDS</span><h1 style="font-family:'Poppins',Arial,sans-serif;font-size:42px;margin:14px 0">One platform for your entire business.</h1>
-<div class="grid2"><div><p style="color:#555;font-size:17px">Unify CRM, Finance, HR, Inventory, and Analytics in one secure cloud platform. Built for growing businesses to streamline operations, make data-driven decisions, and scale with confidence.</p></div><div><img class="building-img" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80"></div></div>
-<div class="grid3"><div class="card"><div class="card-body"><h3>📊 CRM & Sales</h3><p>Manage leads, customers, deals, pipeline & performance.</p></div></div><div class="card"><div class="card-body"><h3>💰 Finance</h3><p>Invoices, expenses, profit reports with full accuracy.</p></div></div><div class="card"><div class="card-body"><h3>👥 HR & Payroll</h3><p>Attendance, payroll, leave, employee management.</p></div></div></div>
-<div style="background:#F5F6F7;border-radius:14px;padding:28px;margin-top:24px"><h3>Pricing - Veltora Retail Suite</h3><p style="color:#666">Starter $29/mo • Growth $99/mo • Enterprise Custom</p><br><div class="btn-row"><button class="btn" onclick="openModal('demo','Veltora Retail Suite')">Start Free Trial</button> <button class="btn-light" onclick="showPage('home')">← Back</button></div></div>
-</div></div>
+<div class="section" id="pricing"><div class="container center"><span class="pill">SIMPLE PRICING • FIRST MONTH FREE</span><h2>Har school ke liye plan</h2>
+<div class="grid3" style="text-align:left">
+<div class="card"><h3>Small School</h3><p style="font-size:32px;color:#0F1E3A"><b>Rs. 4,999</b> <span style="font-size:14px">/month</span></p><ul style="list-style:none;margin:14px 0"><li>✓ Upto 300 Students</li><li>✓ Fees + Attendance</li><li>✓ WhatsApp Alerts</li></ul><button class="btn-light" style="width:100%" onclick="openModal()">Start Free</button></div>
+<div class="price"><span class="pill" style="background:#C9A86A;color:#0F1E3A">MOST POPULAR</span><h3 style="margin-top:12px">Medium School</h3><p style="font-size:32px"><b>Rs. 9,999</b> <span style="font-size:14px">/month</span></p><ul><li>Upto 1000 Students</li><li>Full ERP + Exams + Timetable</li><li>Parent App + Reports</li><li>Priority Support</li></ul><button class="btn-gold" style="width:100%" onclick="openModal()">Get Demo →</button></div>
+<div class="card"><h3>Large / Chain</h3><p style="font-size:32px;color:#0F1E3A"><b>Custom</b></p><ul style="list-style:none;margin:14px 0"><li>✓ Multi-Campus</li><li>✓ Custom Branding</li><li>✓ Dedicated Manager</li></ul><button class="btn-light" style="width:100%" onclick="openModal()">Talk To Us</button></div>
+</div></div></div>
 
-<div id="page-erp" class="page"><div class="container" style="padding:56px 24px">
-<span class="pill">VELTORA SCHOOL ERP • BY VELTORA • IN PERFECT HANDS</span><h1 style="font-family:'Poppins',Arial,sans-serif;font-size:42px;margin:14px 0">Poora school, ek hi system me.</h1>
-<div class="grid2"><div><p style="color:#555;font-size:17px">Admissions se leke Fees, Attendance, Exams, Timetable aur Parent Communication tak. Principal ko clear reports, teachers ko easy tools, parents ko full transparency.</p></div><div><img class="building-img" src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&q=80"></div></div>
-<div class="grid3"><div class="card"><div class="card-body"><h3>🎓 Admissions</h3><p>Online admission, student profile, documents, promotion.</p></div></div><div class="card"><div class="card-body"><h3>💳 Fees</h3><p>Auto challan, discount, fine, SMS / WhatsApp reminders.</p></div></div><div class="card"><div class="card-body"><h3>📚 Exams</h3><p>Attendance, timetable, homework, exams, auto result card.</p></div></div></div>
-<div style="background:#F5F6F7;border-radius:14px;padding:28px;margin-top:24px"><h3>Pricing - School ERP</h3><p style="color:#666">Small School Rs. 4,999/mo • Medium Rs. 9,999/mo • Large - Custom • First Month Free</p><br><div class="btn-row"><button class="btn" onclick="openModal('demo','Veltora School ERP')">Get School ERP Demo - Free</button> <button class="btn-light" onclick="showPage('home')">← Back</button></div></div>
-</div></div>
+<footer id="contact"><div class="container"><div class="foot">
+<div><div class="logo-name" style="color:#fff">schoolvix</div><p style="color:#fff;font-weight:700">By VELTORA - In Perfect Hands</p><p>Technology that moves schools forward.</p></div>
+<div><h4>Product</h4><a href="#features">Features</a><a href="#dashboard">Dashboard</a><a href="#pricing">Pricing</a></div>
+<div><h4>Company</h4><a>About Veltora</a><a>Leadership</a><a>Careers</a></div>
+<div><h4>Contact</h4><p>Email: hello@veltora.com</p><p>HQ: Singapore (Since 2025)</p><p>Karachi • Lahore • Multan</p></div>
+</div></div><div class="copy">© 2026 SchoolVix by VELTORA - In Perfect Hands. All rights reserved.</div></footer>
 
-<footer><div class="container"><div class="foot">
-<div><img id="footerLogo" src="" style="display:none"><h4 style="font-family:'Poppins',Arial,sans-serif;background:linear-gradient(90deg,#8B5CF6,#0A6ED1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-size:22px">VELTORA</h4><p style="color:#fff;font-weight:700">In Perfect Hands 🤝</p><p>Technology that moves schools and businesses forward.</p><p style="font-size:12px">HQ 2025 - Singapore</p><p style="font-size:12px"></p><div class="btn-row"><button class="btn btn-small" onclick="openModal('demo')">Book Demo</button></div></div>
-<div><h4>Company</h4><a onclick="showPage('home');scrollToId('about')">About</a><a onclick="showPage('retail')">Veltora Retail Suite</a><a onclick="showPage('erp')">School ERP</a></div>
-<div><h4>Products</h4><a onclick="showPage('retail')">Veltora Retail Suite</a><a onclick="showPage('erp')">School ERP</a><a onclick="openModal('demo','SaleVix POS')">SaleVix POS</a></div>
-<div><h4>Contact</h4><p>Email: hello@veltora.com</p><p>HQ: Singapore (Since 2025)</p><p>Karachi, Pakistan — 74400</p></div>
-</div></div>
-<div class="copy" id="copyBtn">© 2026 VELTORA - In Perfect Hands. All rights reserved. </div>
-</footer>
-<div class="modal" id="mainModal"><div class="modal-box"><span class="close" onclick="closeModal()">×</span><h2 id="modalTitle">Book Demo</h2><p style="color:#666;font-size:14px">Fill form, team aap se rabta karegi.</p><form onsubmit="saveLead(event)"><input id="fName" placeholder="Full Name *" required><input id="fPhone" placeholder="Phone / WhatsApp *" required><input id="fEmail" type="email" placeholder="Email *" required><select id="fProduct"><option>Veltora Retail Suite</option><option>SaleVix POS</option><option>Veltora School ERP</option><option>General Inquiry</option></select><textarea id="fMsg" placeholder="School / Business Name + Message"></textarea><button class="btn" style="width:100%" type="submit">Submit & Save →</button><p style="font-size:12px;color:#888;text-align:center;margin-top:10px">Data securely save hoga. Delete sirf Developer kar sakta hai.</p></form></div></div>
-<div class="modal" id="devModal"><div class="modal-box" style="max-width:720px"><span class="close" onclick="closeDev()">×</span><h2>🔐 Developer Panel - Only For You</h2><div id="devLogin"><p style="color:#666;font-size:14px">Sirf developer ka access hai. Apna STRONG password dalo.</p><input id="devPass" type="password" placeholder="Developer Password"><button class="btn" style="width:100%" onclick="devLogin()">Unlock Panel</button></div>
-<div id="devContent" style="display:none">
-<div style="background:#EDE9FE;padding:16px;border-radius:12px;margin-bottom:16px"><h3>🖼️ Logo Upload - Aap Khud Upload Karo</h3><p style="font-size:13px;color:#555">Yahan se apna VELTORA logo upload karo. Wo nav bar aur footer me lag jayega.</p><img id="logoPreview" class="logo-preview"><input type="file" id="logoInput" accept="image/*" onchange="previewLogo(event)"><div class="btn-row"><button class="btn btn-small" onclick="saveLogo()">✅ Save Logo</button> <button class="btn-light btn-small" onclick="removeLogo()">❌ Remove Logo</button></div></div>
-<p>Total Leads: <b id="totalLeads">0</b> | <button class="btn btn-small" onclick="exportData()">Download CSV</button> <button class="btn-red btn-small" onclick="deleteAllData()">Delete All Data</button></p><div style="overflow:auto"><table class="admin-table"><thead><tr><th>Name</th><th>Phone</th><th>Email</th><th>Product</th><th>Date</th><th>Action</th></tr></thead><tbody id="leadsTable"></tbody></table></div></div></div></div>
+<div class="modal" id="mainModal"><div class="modal-box"><span class="close" onclick="closeModal()">×</span><h2 style="font-family:'Playfair Display',serif">Book Free Demo</h2><p style="color:#666;font-size:14px">Form bharo, team aap se rabta karegi.</p><form onsubmit="saveLead(event)"><input id="fName" placeholder="Full Name *" required><input id="fPhone" placeholder="Phone / WhatsApp *" required><input id="fEmail" type="email" placeholder="Email *" required><select id="fSchool"><option>School ERP - Small</option><option>School ERP - Medium</option><option>School ERP - Large / Chain</option></select><textarea id="fMsg" placeholder="School Name + Message"></textarea><button class="btn" style="width:100%;justify-content:center" type="submit">Submit →</button></form></div></div>
 <div class="toast" id="toast"></div>
 <script>
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwx1SN6-raVT1ARQVN4orfidIYfxrwS6gbTDBRjH7KyFK87eIls50CVYbeYnp6VLoRd/exec";
-let currentType='demo', tempLogo='';
-function showPage(p){document.querySelectorAll('.page').forEach(e=>e.classList.remove('active'));document.getElementById('page-'+p).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
-function scrollToId(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
-function openModal(type,product){currentType=type;document.getElementById('modalTitle').innerText=type==='demo'?'Book Demo':'Contact Us';if(product)document.getElementById('fProduct').value=product;document.getElementById('mainModal').classList.add('open')}
+function openModal(){document.getElementById('mainModal').classList.add('open')}
 function closeModal(){document.getElementById('mainModal').classList.remove('open')}
-function getLeads(){return JSON.parse(localStorage.getItem('veltora_leads')||'[]')}
-function saveLead(e){
-  e.preventDefault();
-  const lead={name:document.getElementById('fName').value,phone:document.getElementById('fPhone').value,email:document.getElementById('fEmail').value,product:document.getElementById('fProduct').value,msg:document.getElementById('fMsg').value,date:new Date().toLocaleString(),type:currentType};
-  const leads=getLeads();leads.unshift(lead);localStorage.setItem('veltora_leads',JSON.stringify(leads));updateCount();closeModal();e.target.reset();
-  fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(lead)}).catch(()=>{});
-  showToast('✅ Thank You!data save sucessfully.');
-}
-function updateCount(){const el=document.getElementById('leadCount');if(el)el.innerText=getLeads().length+' Leads Saved'}
-function showToast(t){const el=document.getElementById('toast');el.innerText=t;el.style.display='block';setTimeout(()=>el.style.display='none',3500)}
-function loadLogo(){const saved=localStorage.getItem('veltora_logo');if(saved){document.getElementById('logoImg').src=saved;document.getElementById('logoImg').style.display='block';document.getElementById('logoDefault').style.display='none';document.getElementById('footerLogo').src=saved;document.getElementById('footerLogo').style.display='block';document.getElementById('logoPreview').src=saved;document.getElementById('logoPreview').style.display='block'}}
-function previewLogo(e){const file=e.target.files[0];if(!file)return;const r=new FileReader();r.onload=function(ev){tempLogo=ev.target.result;document.getElementById('logoPreview').src=tempLogo;document.getElementById('logoPreview').style.display='block'};r.readAsDataURL(file)}
-function saveLogo(){if(!tempLogo && !localStorage.getItem('veltora_logo'))return alert('Pehle logo select karo');if(tempLogo)localStorage.setItem('veltora_logo',tempLogo);loadLogo();showToast('✅ Logo save ho gaya! Har jagah lag gaya.')}
-function removeLogo(){localStorage.removeItem('veltora_logo');tempLogo='';document.getElementById('logoImg').style.display='none';document.getElementById('logoDefault').style.display='block';document.getElementById('footerLogo').style.display='none';document.getElementById('logoPreview').style.display='none';showToast('Logo remove kar diya')}
-let clicks=0;document.getElementById('copyBtn')?.addEventListener('click',()=>{clicks++;if(clicks>=3){clicks=0;document.getElementById('devModal').classList.add('open')}setTimeout(()=>clicks=0,1500)});
-document.addEventListener('keydown',e=>{if(e.ctrlKey&&e.key.toLowerCase()==='d'){e.preventDefault();document.getElementById('devModal').classList.add('open')}});
-function closeDev(){document.getElementById('devModal').classList.remove('open');document.getElementById('devContent').style.display='none';document.getElementById('devLogin').style.display='block'}
-function devLogin(){if(document.getElementById('devPass').value==='Veltora@Fahad2026#'){document.getElementById('devLogin').style.display='none';document.getElementById('devContent').style.display='block';renderLeads()}else alert('❌ Wrong Password! Sirf Developer ka access hai.')}
-function renderLeads(){const leads=getLeads();document.getElementById('totalLeads').innerText=leads.length;document.getElementById('leadsTable').innerHTML=leads.length?leads.map((l,i)=>`<tr><td>${l.name}</td><td>${l.phone}</td><td>${l.email}</td><td>${l.product}</td><td>${l.date}</td><td><button class="btn-red" onclick="deleteOne(${i})">Delete</button></td></tr>`).join(''):'<tr><td colspan="6" style="text-align:center">No data yet</td></tr>'}
-function deleteOne(i){if(confirm('Ye lead delete karna hai?')){const l=getLeads();l.splice(i,1);localStorage.setItem('veltora_leads',JSON.stringify(l));renderLeads();updateCount();showToast('Lead deleted by Developer')}}
-function deleteAllData(){if(confirm('⚠️ SARA DATA DELETE karna hai?')){localStorage.removeItem('veltora_leads');renderLeads();updateCount();showToast('All data deleted by Developer')}}
-function exportData(){const leads=getLeads();if(!leads.length)return alert('No data');let csv='Name,Phone,Email,Product,Date,Message\n'+leads.map(l=>`"${l.name}","${l.phone}","${l.email}","${l.product}","${l.date}","${l.msg||''}"`).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='veltora_leads.csv';a.click()}
-updateCount(); loadLogo();
+function saveLead(e){e.preventDefault();const lead={name:document.getElementById('fName').value,phone:document.getElementById('fPhone').value,email:document.getElementById('fEmail').value,school:document.getElementById('fSchool').value,msg:document.getElementById('fMsg').value,date:new Date().toLocaleString()};let leads=JSON.parse(localStorage.getItem('schoolvix_leads')||'[]');leads.unshift(lead);localStorage.setItem('schoolvix_leads',JSON.stringify(leads));closeModal();e.target.reset();const t=document.getElementById('toast');t.innerText='✅ Thank You! Team jald rabta karegi.';t.style.display='block';setTimeout(()=>t.style.display='none',3500)}
 </script>
 </body>
 </html>
